@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smilevane Dental Care — Gentle Family Dentist in Bengaluru</title>
+<meta name="description" content="Smilevane Dental Care in Bengaluru offers checkups, cleaning, whitening, braces and aligners, root canal, implants and kids' dentistry. Clear explanations, unhurried appointments.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700&display=swap" rel="stylesheet">
+<!-- Section: Structured data (placeholder / sample) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dentist",
+  "name": "Smilevane Dental Care",
+  "description": "Family dental clinic in Bengaluru offering checkups, cleaning, whitening, braces and aligners, root canal, implants and kids' dentistry. Sample listing for portfolio concept.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "No. 14, Main Road, Your City (sample address)",
+    "addressLocality": "Bengaluru",
+    "addressRegion": "Karnataka",
+    "postalCode": "560038",
+    "addressCountry": "IN"
+  },
+  "telephone": "+91-98XXXXXXXX",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+      "opens": "10:00",
+      "closes": "20:30"
+    }
+  ],
+  "priceRange": "₹XXX",
+  "identifier": "Reg. No. KSDC-XXXXX (sample)"
+}
+</script>
+<style>
+/* ========== Design tokens ========== */
+:root{
+  --ink:#12343B;
+  --bg:#F6FAF9;
+  --mint:#E6F1EF;
+  --card:#FFFFFF;
+  --teal:#1F8A84;
+  --body:#55656B;
+  --border:#DCE7E5;
+  --footer-muted:#C6D6D3;
+  --error:#B42318;
+  --font-heading:"Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-body:"Inter", system-ui, -apple-system, sans-serif;
+  --s1:8px;
+  --s2:16px;
+  --s3:24px;
+  --s4:32px;
+  --s5:64px;
+  --s6:96px;
+  --radius:8px;
+  --container:1140px;
+  --nav-h:68px;
+}
+/* ========== Base ========== */
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:var(--font-body);
+  font-size:16px;
+  line-height:1.65;
+  color:var(--body);
+  background:var(--bg);
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3{
+  font-family:var(--font-heading);
+  color:var(--ink);
+  line-height:1.25;
+  margin:0 0 var(--s2) 0;
+  letter-spacing:-0.01em;
+}
+h1{font-size:clamp(2rem,5.2vw,2.75rem)}
+h2{font-size:clamp(1.5rem,3.4vw,1.9rem)}
+h3{font-size:1.125rem}
+p{margin:0 0 var(--s2) 0}
+a{color:var(--teal);text-underline-offset:3px}
+img{max-width:100%;display:block;height:auto}
+section{scroll-margin-top:calc(var(--nav-h) + 16px)}
+.container{
+  max-width:var(--container);
+  margin:0 auto;
+  padding-left:20px;
+  padding-right:20px;
+}
+.section{padding-top:56px;padding-bottom:56px}
+@media(min-width:900px){.section{padding-top:96px;padding-bottom:96px}body{font-size:17px}}
+.section-alt{background:var(--mint)}
+.section-white{background:var(--card)}
+.eyebrow{
+  font-size:0.82rem;
+  font-weight:600;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+  color:var(--teal);
+  margin-bottom:var(--s2);
+}
+.lead{font-size:1.05rem;color:var(--body);max-width:62ch}
+.small{font-size:0.9rem}
+.muted{color:var(--body)}
+/* Focus */
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{
+  outline:3px solid var(--teal);
+  outline-offset:2px;
+  border-radius:4px;
+}
+/* Buttons */
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  font-family:var(--font-body);
+  font-weight:600;
+  font-size:1rem;
+  line-height:1.4;
+  padding:13px 24px;
+  border-radius:var(--radius);
+  border:1px solid var(--teal);
+  text-decoration:none;
+  cursor:pointer;
+  min-height:48px;
+}
+.btn-solid{background:var(--teal);color:#fff}
+.btn-solid:hover{background:var(--ink);border-color:var(--ink);color:#fff}
+.btn-outline{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn-outline:hover{background:var(--mint);border-color:var(--ink)}
+.btn-full{width:100%}
+/* ========== Navbar ========== */
+.site-header{
+  position:sticky;top:0;z-index:50;
+  background:var(--card);
+  border-bottom:1px solid var(--border);
+  height:var(--nav-h);
+}
+.nav{
+  height:var(--nav-h);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:var(--s2);
+}
+.wordmark{
+  font-family:var(--font-heading);
+  font-weight:700;
+  font-size:1.2rem;
+  color:var(--ink);
+  text-decoration:none;
+  letter-spacing:-0.02em;
+  white-space:nowrap;
+}
+.wordmark span{color:var(--teal);font-weight:700}
+.nav-links{
+  display:none;
+  gap:var(--s3);
+  list-style:none;
+  margin:0;padding:0;
+}
+.nav-links a{
+  color:var(--ink);
+  text-decoration:none;
+  font-weight:500;
+  font-size:0.98rem;
+}
+.nav-links a:hover{text-decoration:underline}
+.nav-cta{display:none}
+.menu-btn{
+  background:none;border:1px solid var(--border);
+  border-radius:var(--radius);
+  width:44px;height:44px;
+  display:inline-flex;align-items:center;justify-content:center;
+  cursor:pointer;color:var(--ink);
+  font-size:1.3rem;line-height:1;
+}
+@media(min-width:900px){
+  .nav-links{display:flex}
+  .nav-cta{display:inline-flex}
+  .menu-btn{display:none}
+}
+.mobile-menu{
+  display:none;
+  background:var(--card);
+  border-bottom:1px solid var(--border);
+  padding:0 20px 16px 20px;
+}
+.mobile-menu.open{display:block}
+.mobile-menu ul{list-style:none;margin:0;padding:8px 0}
+.mobile-menu li{border-top:1px solid var(--border)}
+.mobile-menu li:first-child{border-top:none}
+.mobile-menu a{
+  display:block;padding:14px 4px;
+  color:var(--ink);text-decoration:none;font-weight:500;
+}
+.mobile-menu .btn{margin-top:8px}
+/* ========== Hero ========== */
+.hero{background:var(--bg);padding-top:32px;padding-bottom:32px}
+@media(min-width:900px){.hero{padding-top:64px;padding-bottom:48px}}
+.hero-grid{
+  display:grid;grid-template-columns:minmax(0,1fr);
+  gap:var(--s4);align-items:center;
+}
+@media(min-width:900px){.hero-grid{grid-template-columns:minmax(0,1.05fr) minmax(0,0.95fr);gap:var(--s5)}}
+.hero-copy p.sub{
+  font-size:1.08rem;
+  max-width:52ch;
+  margin-bottom:var(--s3);
+}
+.hero-actions{display:flex;flex-direction:column;gap:12px;margin-bottom:var(--s3)}
+@media(min-width:480px){.hero-actions{flex-direction:row}}
+.hero-meta{
+  border-top:1px solid var(--border);
+  padding-top:var(--s2);
+  font-size:0.9rem;
+  display:flex;flex-wrap:wrap;gap:8px 24px;
+}
+.hero-meta strong{color:var(--ink);font-weight:600}
+.hero-figure{
+  margin:0;
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  overflow:hidden;
+}
+.hero-figure img{
+  width:100%;aspect-ratio:4/3;object-fit:cover;
+  background:#DCE7E5;
+}
+.hero-figure figcaption{
+  padding:12px 16px;font-size:0.88rem;
+  border-top:1px solid var(--border);
+}
+/* ========== Trust strip ========== */
+.trust{
+  background:var(--card);
+  border-top:1px solid var(--border);
+  border-bottom:1px solid var(--border);
+}
+.trust-list{
+  list-style:none;margin:0;padding:0;
+  display:grid;grid-template-columns:minmax(0,1fr);
+}
+.trust-list li{
+  padding:16px 0;
+  font-size:0.95rem;
+  color:var(--ink);
+  font-weight:500;
+  border-top:1px solid var(--border);
+}
+.trust-list li:first-child{border-top:none}
+@media(min-width:700px){
+  .trust-list{grid-template-columns:repeat(4,minmax(0,1fr))}
+  .trust-list li{border-top:none;border-left:1px solid var(--border);padding:20px 24px}
+  .trust-list li:first-child{border-left:none;padding-left:0}
+}
+/* ========== Services (list, not cards) ========== */
+.services-grid{
+  display:grid;grid-template-columns:minmax(0,1fr);
+  gap:0 var(--s5);
+}
+@media(min-width:900px){.services-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}}
+.service-list{list-style:none;margin:0;padding:0;border-top:1px solid var(--border)}
+.service-list li{
+  padding:20px 0;
+  border-bottom:1px solid var(--border);
+  display:grid;gap:6px;
+}
+.service-list h3{margin:0;color:var(--ink)}
+.service-list h3 .num{
+  display:inline-block;
+  font-size:0.8rem;font-weight:600;
+  color:var(--teal);
+  margin-right:8px;
+  letter-spacing:0.04em;
+}
+.service-list p{margin:0;font-size:0.98rem}
+.services-note{
+  margin-top:var(--s3);
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  padding:16px 20px;
+  font-size:0.93rem;
+}
+/* ========== Doctor ========== */
+.doctor-grid{
+  display:grid;grid-template-columns:minmax(0,1fr);
+  gap:var(--s4);
+}
+@media(min-width:900px){.doctor-grid{grid-template-columns:minmax(0,380px) minmax(0,1fr);gap:var(--s5);align-items:start}}
+.doctor-photo{
+  margin:0;
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  overflow:hidden;
+  background:var(--card);
+}
+.doctor-photo img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.doctor-photo figcaption{padding:12px 16px;font-size:0.88rem;border-top:1px solid var(--border)}
+.doctor-facts{
+  list-style:none;margin:0 0 var(--s3) 0;padding:0;
+  display:grid;gap:12px;
+  border-top:1px solid var(--border);
+  padding-top:var(--s2);
+}
+.doctor-facts li{display:grid;grid-template-columns:140px minmax(0,1fr);gap:12px;font-size:0.96rem}
+.doctor-facts dt{font-weight:600;color:var(--ink)}
+.doctor-facts dd{margin:0}
+.team-row{
+  margin-top:var(--s4);
+  display:grid;grid-template-columns:minmax(0,1fr);
+  gap:var(--s2);
+  border-top:1px solid var(--border);
+  padding-top:var(--s3);
+}
+@media(min-width:700px){.team-row{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}}
+.team-card{
+  background:var(--bg);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  padding:16px 18px;
+  display:flex;gap:16px;align-items:flex-start;
+}
+.team-card img{width:64px;height:64px;border-radius:50%;object-fit:cover;flex-shrink:0;background:#DCE7E5}
+.team-card h3{margin:0 0 4px 0;font-size:1rem}
+.team-card p{margin:0;font-size:0.9rem}
+/* ========== Timeline ========== */
+.timeline{list-style:none;margin:32px 0 0 0;padding:0;position:relative}
+.timeline::before{
+  content:"";position:absolute;left:11px;top:8px;bottom:8px;width:2px;background:var(--border);
+}
+.timeline li{
+  position:relative;
+  padding:0 0 32px 44px;
+}
+.timeline li:last-child{padding-bottom:0}
+.timeline-dot{
+  position:absolute;left:0;top:4px;
+  width:24px;height:24px;border-radius:50%;
+  background:var(--card);
+  border:2px solid var(--teal);
+  display:flex;align-items:center;justify-content:center;
+  font-size:0.75rem;font-weight:700;color:var(--ink);
+}
+.timeline h3{margin:0 0 6px 0}
+.timeline p{margin:0;max-width:60ch}
+@media(min-width:900px){
+  .timeline{max-width:760px}
+  .timeline li{padding-left:56px}
+}
+/* ========== Gallery ========== */
+.gallery-grid{
+  display:grid;grid-template-columns:minmax(0,1fr);
+  gap:var(--s2);
+  margin-top:var(--s3);
+}
+@media(min-width:700px){.gallery-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.gallery-grid figure{
+  margin:0;background:var(--card);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  overflow:hidden;
+}
+.gallery-grid img{width:100%;aspect-ratio:4/3;object-fit:cover;background:#DCE7E5}
+.gallery-grid figcaption{padding:12px 16px;font-size:0.9rem;border-top:1px solid var(--border)}
+.gallery-grid figcaption strong{display:block;color:var(--ink);font-size:0.95rem}
+/* ========== Reviews ========== */
+.reviews-label{font-size:0.88rem;margin-top:8px}
+.review-featured{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  padding:24px;
+  margin-top:var(--s3);
+}
+.review-featured blockquote{margin:0 0 12px 0;font-size:1.08rem;color:var(--ink);line-height:1.6}
+.review-meta{font-size:0.9rem}
+.review-meta strong{color:var(--ink)}
+.review-grid{
+  display:grid;grid-template-columns:minmax(0,1fr);
+  gap:var(--s2);margin-top:var(--s2);
+}
+@media(min-width:800px){.review-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}}
+.review-item{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  padding:20px 22px;
+}
+.review-item blockquote{margin:0 0 12px 0;color:var(--ink)}
+.stars{color:var(--teal);letter-spacing:2px;font-size:0.9rem;margin-bottom:8px}
+/* ========== Appointment ========== */
+.booking-wrap{
+  display:grid;grid-template-columns:minmax(0,1fr);
+  gap:var(--s4);
+  margin-top:var(--s3);
+}
+@media(min-width:900px){.booking-wrap{grid-template-columns:minmax(0,0.9fr) minmax(0,1.1fr);gap:var(--s5);align-items:start}}
+.booking-info{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  padding:24px;
+}
+.booking-info ul{margin:12px 0 0 0;padding-left:20px}
+.booking-info li{margin-bottom:8px}
+form.booking-form{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  padding:24px;
+}
+.form-row{display:grid;grid-template-columns:minmax(0,1fr);gap:16px;margin-bottom:16px}
+@media(min-width:600px){.form-row.two{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}}
+.field{display:grid;gap:6px}
+label{font-weight:600;color:var(--ink);font-size:0.95rem}
+input[type="text"],input[type="tel"],input[type="date"],select{
+  width:100%;
+  font:inherit;
+  padding:12px 14px;
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  background:#fff;
+  color:var(--ink);
+  min-height:48px;
+}
+input[aria-invalid="true"],select[aria-invalid="true"]{border-color:var(--error)}
+.hint{font-size:0.86rem;margin:0}
+.error-msg{font-size:0.86rem;color:var(--error);margin:0;display:none}
+.error-msg.show{display:block}
+.radio-group{border:none;margin:0;padding:0}
+.radio-group legend{font-weight:600;color:var(--ink);font-size:0.95rem;padding:0;margin-bottom:8px}
+.radio-options{display:flex;flex-wrap:wrap;gap:8px}
+.radio-pill{
+  display:inline-flex;align-items:center;gap:8px;
+  border:1px solid var(--border);border-radius:999px;
+  padding:10px 16px;cursor:pointer;
+  font-size:0.95rem;color:var(--ink);
+}
+.radio-pill input{accent-color:var(--teal);width:18px;height:18px}
+.form-success{
+  display:none;
+  border:1px solid var(--teal);
+  background:var(--mint);
+  border-radius:var(--radius);
+  padding:16px 18px;
+  color:var(--ink);
+  font-size:0.95rem;
+  margin-top:16px;
+}
+.form-success.show{display:block}
+/* ========== FAQ ========== */
+.faq-list{margin-top:var(--s3);border-top:1px solid var(--border)}
+.faq-item{border-bottom:1px solid var(--border)}
+.faq-q{
+  width:100%;background:none;border:none;
+  text-align:left;cursor:pointer;
+  display:flex;justify-content:space-between;align-items:center;gap:16px;
+  padding:18px 4px;
+  font-family:var(--font-heading);
+  font-weight:600;font-size:1rem;color:var(--ink);
+}
+.faq-q .sign{
+  flex-shrink:0;
+  width:32px;height:32px;
+  border:1px solid var(--border);
+  border-radius:50%;
+  display:inline-flex;align-items:center;justify-content:center;
+  font-size:1.1rem;font-weight:400;
+}
+.faq-a{padding:0 4px 20px 4px;max-width:70ch}
+.faq-a[hidden]{display:none}
+/* ========== Footer ========== */
+.site-footer{background:var(--ink);color:#fff;padding-top:56px;padding-bottom:32px}
+@media(min-width:900px){.site-footer{padding-top:64px}}
+.footer-grid{
+  display:grid;grid-template-columns:minmax(0,1fr);
+  gap:32px;
+}
+@media(min-width:900px){.footer-grid{grid-template-columns:minmax(0,1.1fr) minmax(0,0.9fr) minmax(0,1fr);gap:48px}}
+.site-footer h2,.site-footer h3{color:#fff}
+.site-footer p,.site-footer li{color:#EAF2F0;font-size:0.95rem}
+.site-footer a{color:#fff}
+.timings{width:100%;border-collapse:collapse;font-size:0.93rem;margin-top:12px}
+.timings th,.timings td{text-align:left;padding:8px 0;border-top:1px solid rgba(255,255,255,0.18);color:#EAF2F0}
+.timings th{font-weight:500}
+.map-placeholder{
+  border:1px solid rgba(255,255,255,0.28);
+  border-radius:var(--radius);
+  padding:20px;
+  background:transparent;
+  min-height:180px;
+  display:grid;align-content:center;gap:8px;
+}
+.footer-bottom{
+  margin-top:40px;
+  border-top:1px solid rgba(255,255,255,0.2);
+  padding-top:20px;
+  font-size:0.86rem;
+  color:var(--footer-muted);
+  display:grid;gap:8px;
+}
+/* ========== Mobile bar + floating ========== */
+.mobile-bar{
+  position:fixed;left:0;right:0;bottom:0;z-index:60;
+  display:flex;
+  background:var(--card);
+  border-top:1px solid var(--border);
+  padding:8px 12px calc(8px + env(safe-area-inset-bottom));
+  gap:8px;
+}
+.mobile-bar a{
+  flex:1;text-align:center;
+  padding:12px 8px;border-radius:var(--radius);
+  font-weight:600;text-decoration:none;font-size:0.95rem;
+  min-height:48px;display:flex;align-items:center;justify-content:center;
+}
+.mobile-bar .call{background:#fff;color:var(--ink);border:1px solid var(--ink)}
+.mobile-bar .wa{background:var(--teal);color:#fff;border:1px solid var(--teal)}
+@media(min-width:768px){.mobile-bar{display:none}}
+body{padding-bottom:72px}
+@media(min-width:768px){body{padding-bottom:0}}
+.float-wa{
+  display:none;
+  position:fixed;right:24px;bottom:24px;z-index:60;
+  background:var(--teal);color:#fff;
+  text-decoration:none;font-weight:600;
+  padding:14px 20px;border-radius:999px;
+  border:1px solid var(--teal);
+  box-shadow:0 4px 16px rgba(18,52,59,0.18);
+}
+.float-wa:hover{background:var(--ink);border-color:var(--ink)}
+@media(min-width:768px){.float-wa{display:inline-flex}}
+/* Reveal */
+.reveal{opacity:0;transform:translateY(12px);transition:opacity 0.6s ease,transform 0.6s ease}
+.reveal.visible{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .reveal{opacity:1;transform:none;transition:none}
+}
+.skip-link{
+  position:absolute;left:-9999px;top:0;background:var(--ink);color:#fff;padding:10px 16px;z-index:100;
+}
+.skip-link:focus{left:8px;top:8px}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<!-- Section 1: Sticky navbar -->
+<header class="site-header">
+  <div class="container nav" role="navigation" aria-label="Primary">
+    <a class="wordmark" href="#top" aria-label="Smilevane Dental Care home">Smile<span>vane</span> Dental Care</a>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#doctor">Doctor</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="btn btn-solid nav-cta" href="#book">Book Appointment</a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu">☰</button>
+  </div>
+  <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile">
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#doctor">Doctor</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a class="btn btn-solid btn-full" href="#book">Book Appointment</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+<!-- Section 2: Hero -->
+<section class="hero" id="top" aria-labelledby="hero-heading">
+  <div class="container hero-grid">
+    <div class="hero-copy reveal">
+      <p class="eyebrow">Family dentist · Indiranagar, Bengaluru</p>
+      <h1 id="hero-heading">Gentle, careful dental care for the whole family.</h1>
+      <p class="sub">Modern equipment, clear explanations and unhurried appointments, in the heart of Bengaluru.</p>
+      <div class="hero-actions">
+        <a class="btn btn-solid" href="#book">Book Appointment</a>
+      </div>
+      <div class="hero-meta" aria-label="Clinic timings and registration">
+        <span><strong>Mon–Sat:</strong> 10:00 AM – 1:30 PM, 4:30 – 8:30 PM</span>
+        <span><strong>Sunday:</strong> Closed / by prior appointment</span>
+        <span>Reg. No. KSDC-XXXXX (sample)</span>
+      </div>
+    </div>
+    <figure class="hero-figure reveal">
+      <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=900&q=70" alt="Clean, bright dental treatment room with dental chair and overhead light" width="900" height="675" fetchpriority="high">
+      <figcaption>Our treatment room — wiped down and set up fresh for each patient. Sample photo.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- Section 3: Trust strip -->
+<div class="trust" aria-label="Clinic practices">
+  <div class="container">
+    <ul class="trust-list">
+      <li>Sterilised instruments for every patient</li>
+      <li>Digital X-rays</li>
+      <li>Kids welcome</li>
+      <li>Evening appointments</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Section 4: Services -->
+<section class="section" id="services" aria-labelledby="services-heading">
+  <div class="container">
+    <p class="eyebrow">What we treat</p>
+    <h2 id="services-heading">Services, explained in plain words</h2>
+    <p class="lead">Every treatment starts with an examination and a written estimate. Consultation fee: ₹XXX (sample). We will tell you what is needed, what can wait, and what your options are.</p>
+    <div class="services-grid reveal">
+      <ul class="service-list">
+        <li>
+          <h3><span class="num">01</span>Checkup and Cleaning</h3>
+          <p>A full look at teeth and gums, followed by removal of plaque and tartar to keep gums healthy.</p>
+        </li>
+        <li>
+          <h3><span class="num">02</span>Teeth Whitening</h3>
+          <p>A supervised procedure that lightens surface stains. We first check if your enamel and gums are suitable.</p>
+        </li>
+        <li>
+          <h3><span class="num">03</span>Braces and Aligners</h3>
+          <p>Options to straighten crowded or spaced teeth for teens and adults, with monthly review visits.</p>
+        </li>
+      </ul>
+      <ul class="service-list">
+        <li>
+          <h3><span class="num">04</span>Root Canal Treatment</h3>
+          <p>Removes infection from inside the tooth so you can keep your natural tooth.</p>
+        </li>
+        <li>
+          <h3><span class="num">05</span>Dental Implants</h3>
+          <p>A fixed replacement for a missing tooth, placed in stages after scans and a suitability assessment.</p>
+        </li>
+        <li>
+          <h3><span class="num">06</span>Kids' Dentistry</h3>
+          <p>Short, patient visits for checkups, cavities and habit guidance, with parents in the room.</p>
+        </li>
+      </ul>
+    </div>
+    <div class="services-note">Not sure what you need? Book a checkup. If no treatment is needed, we will say so and suggest when to return.</div>
+  </div>
+</section>
+
+<!-- Section 5: Meet the doctor -->
+<section class="section section-white" id="doctor" aria-labelledby="doctor-heading" style="border-top:1px solid var(--border);border-bottom:1px solid var(--border)">
+  <div class="container">
+    <p class="eyebrow">Meet the doctor</p>
+    <h2 id="doctor-heading">Care that takes nervousness seriously</h2>
+    <div class="doctor-grid reveal" style="margin-top:24px">
+      <figure class="doctor-photo">
+        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=700&q=70" alt="Portrait of Dr A Raman, female dentist in white coat smiling in clinic" width="700" height="875" loading="lazy">
+        <figcaption>Dr. A. Raman, BDS, MDS — Chief Dentist. Sample portrait.</figcaption>
+      </figure>
+      <div>
+        <h3 style="font-size:1.35rem;margin-bottom:8px">Dr. A. Raman, BDS, MDS</h3>
+        <p class="small" style="margin-bottom:16px">Conservative Dentistry and Endodontics · 14 years of experience</p>
+        <dl class="doctor-facts">
+          <div style="display:contents"><dt>Qualification</dt><dd>BDS (2008), MDS in Conservative Dentistry (2012) — sample details</dd></div>
+          <div style="display:contents"><dt>Focus areas</dt><dd>Routine checkups, root canal treatment, crowns, and dental care for anxious patients</dd></div>
+          <div style="display:contents"><dt>Languages</dt><dd>English, Kannada, Hindi, Tamil</dd></div>
+          <div style="display:contents"><dt>Registration</dt><dd>KSDC-XXXXX (sample)</dd></div>
+        </dl>
+        <p>I know many adults put off dental visits because of a bad experience years ago, or worry about being judged for the condition of their teeth. My rule in the room is simple: we explain before we do anything, we agree on a stop signal, and we go at your pace. Parents often sit beside the chair for children's visits, and we keep first visits short and conversational.</p>
+        <p class="small">Consultation fee: ₹XXX (sample). Digital X-ray, if needed, is charged separately with prior consent.</p>
+        <div class="team-row">
+          <div class="team-card">
+            <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=200&q=60" alt="Portrait of Dr N Kulkarni, associate dentist" loading="lazy">
+            <div><h3>Dr. N. Kulkarni, BDS</h3><p>Associate Dentist — general care, kids' checkups and aligner follow-ups. 7 years (sample).</p></div>
+          </div>
+          <div class="team-card">
+            <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=200&q=60" alt="Portrait of P D'Souza, dental hygienist" loading="lazy">
+            <div><h3>P. D'Souza</h3><p>Dental Hygienist — cleaning, polishing and home-care guidance. Sterilisation lead (sample).</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section 6: What to expect -->
+<section class="section section-alt" id="process" aria-labelledby="process-heading">
+  <div class="container">
+    <p class="eyebrow">First visit?</p>
+    <h2 id="process-heading">What to expect</h2>
+    <p class="lead">Four clear steps. You will always know what happens next and what it will cost before we begin.</p>
+    <ol class="timeline reveal">
+      <li>
+        <span class="timeline-dot" aria-hidden="true">1</span>
+        <h3>Book</h3>
+        <p>Call, WhatsApp or use the form below. Tell us your concern in one line so we allow the right amount of time — usually 20–30 minutes for a checkup.</p>
+      </li>
+      <li>
+        <span class="timeline-dot" aria-hidden="true">2</span>
+        <h3>Consultation and X-ray, if needed</h3>
+        <p>The doctor examines teeth and gums and takes a digital X-ray only if it will change the advice. You can see the images on screen.</p>
+      </li>
+      <li>
+        <span class="timeline-dot" aria-hidden="true">3</span>
+        <h3>Treatment plan explained with options</h3>
+        <p>We list what is urgent, what can wait, and the approximate fee for each option in writing. No work starts without your consent.</p>
+      </li>
+      <li>
+        <span class="timeline-dot" aria-hidden="true">4</span>
+        <h3>Treatment and follow-up</h3>
+        <p>After treatment we share care instructions on paper and call or message the next day for longer procedures. Reviews are scheduled, not left open.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- Section 7: Our clinic -->
+<section class="section section-white" id="clinic" aria-labelledby="clinic-heading" style="border-top:1px solid var(--border)">
+  <div class="container">
+    <p class="eyebrow">Inside Smilevane</p>
+    <h2 id="clinic-heading">Our clinic</h2>
+    <p class="lead">A small, quiet space on Main Road. Step-free entry from the ground floor, waiting seating for six, and a separate sterilisation area.</p>
+    <div class="gallery-grid reveal">
+      <figure>
+        <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=800&q=70" alt="Bright clinic reception with chairs and front desk" width="800" height="600" loading="lazy">
+        <figcaption><strong>Reception</strong>Check in, fill a short health form, and wait. Water and seating available.</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1629909615184-74f495363b67?auto=format&fit=crop&w=800&q=70" alt="Dental treatment room with modern dental chair and instruments" width="800" height="600" loading="lazy">
+        <figcaption><strong>Treatment room</strong>One patient at a time. Chair-side screen to show X-rays.</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&w=800&q=70" alt="Clean sterilisation area with packed instruments and equipment" width="800" height="600" loading="lazy">
+        <figcaption><strong>Sterilisation area</strong>Instruments are cleaned, packed and autoclaved. Indicators checked daily.</figcaption>
+      </figure>
+    </div>
+    <p class="small" style="margin-top:16px">Photos are representative placeholders for this concept design.</p>
+  </div>
+</section>
+
+<!-- Section 8: Reviews -->
+<section class="section" id="reviews" aria-labelledby="reviews-heading">
+  <div class="container">
+    <p class="eyebrow">Patient notes</p>
+    <h2 id="reviews-heading">What patients tell us</h2>
+    <p class="reviews-label muted">Sample reviews for portfolio concept — names and treatments are illustrative.</p>
+    <div class="review-featured reveal">
+      <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+      <blockquote>“Dr. Raman explained every step before starting. I wasn't nervous at all.”</blockquote>
+      <p class="review-meta"><strong>Meera S.</strong> — Root canal treatment, March 2026 (sample)</p>
+      <p class="small" style="margin:8px 0 0 0">Had avoided dentists for 4 years. Visit took 45 minutes including X-ray and written estimate.</p>
+    </div>
+    <div class="review-grid reveal">
+      <div class="review-item">
+        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <blockquote>“My 6-year-old actually asked when we are going back. Short visit, no scolding about sweets.”</blockquote>
+        <p class="review-meta"><strong>Arun P.</strong> — Kids' checkup and cleaning (sample)</p>
+      </div>
+      <div class="review-item">
+        <div class="stars" aria-label="4 out of 5 stars">★★★★☆</div>
+        <blockquote>“Got two options for my missing tooth with costs in writing. No pressure to decide the same day.”</blockquote>
+        <p class="review-meta"><strong>Fatima K.</strong> — Implant consultation (sample)</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section 9: Appointment form -->
+<section class="section section-white" id="book" aria-labelledby="book-heading" style="border-top:1px solid var(--border)">
+  <div class="container">
+    <p class="eyebrow">Visit us</p>
+    <h2 id="book-heading">Book an appointment</h2>
+    <p class="lead" style="margin-bottom:8px">We'll confirm your slot by phone.</p>
+    <p class="small">Fill the form and it will open WhatsApp with your details ready to send. Or call <a href="tel:+9198XXXXXXXX">98XXXXXXXX</a> (sample). Consultation fee: ₹XXX.</p>
+    <div class="booking-wrap">
+      <aside class="booking-info reveal" aria-label="Booking information">
+        <h3>How booking works</h3>
+        <ul>
+          <li>Morning slots fill 2–3 days ahead; evenings are busiest Tue–Thu.</li>
+          <li>Please arrive 10 minutes early with any old prescriptions or X-rays.</li>
+          <li>Need to reschedule? Reply to our confirmation message — no charge up to 3 hours before.</li>
+          <li>Children under 12: one parent stays in the room throughout.</li>
+        </ul>
+        <p class="small" style="margin-top:16px;margin-bottom:0"><strong style="color:var(--ink)">Clinic hours:</strong><br>Mon–Sat 10:00–13:30, 16:30–20:30<br>Sunday closed / by prior appointment</p>
+      </aside>
+      <form class="booking-form reveal" id="bookForm" novalidate aria-describedby="formIntro">
+        <p id="formIntro" class="small">All fields are required. We only use your details to confirm this visit.</p>
+        <div class="form-row two">
+          <div class="field">
+            <label for="fName">Full name</label>
+            <input type="text" id="fName" name="name" autocomplete="name" placeholder="e.g. Priya Nair">
+            <p class="error-msg" id="errName">Please enter your name (at least 2 letters).</p>
+          </div>
+          <div class="field">
+            <label for="fPhone">Phone (10 digits)</label>
+            <input type="tel" id="fPhone" name="phone" autocomplete="tel" inputmode="numeric" maxlength="10" placeholder="e.g. 98888 88888">
+            <p class="hint">Indian mobile number, without +91.</p>
+            <p class="error-msg" id="errPhone">Please enter a valid 10-digit mobile number.</p>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="fService">Service needed</label>
+            <select id="fService" name="service">
+              <option value="">Select a service…</option>
+              <option>Checkup and Cleaning</option>
+              <option>Teeth Whitening</option>
+              <option>Braces and Aligners</option>
+              <option>Root Canal Treatment</option>
+              <option>Dental Implants</option>
+              <option>Kids' Dentistry</option>
+              <option>Tooth pain / Emergency</option>
+              <option>Not sure — need advice</option>
+            </select>
+            <p class="error-msg" id="errService">Please choose a service.</p>
+          </div>
+        </div>
+        <div class="form-row two">
+          <div class="field">
+            <label for="fDate">Preferred date</label>
+            <input type="date" id="fDate" name="date">
+            <p class="error-msg" id="errDate">Please choose a date (today or later, Mon–Sat preferred).</p>
+          </div>
+          <div class="field">
+            <fieldset class="radio-group">
+              <legend>Preferred time slot</legend>
+              <div class="radio-options" role="radiogroup" aria-label="Preferred time slot">
+                <label class="radio-pill"><input type="radio" name="slot" value="Morning (10 AM – 1:30 PM)"> Morning</label>
+                <label class="radio-pill"><input type="radio" name="slot" value="Afternoon (1:30 – 4:30 PM)"> Afternoon</label>
+                <label class="radio-pill"><input type="radio" name="slot" value="Evening (4:30 – 8:30 PM)"> Evening</label>
+              </div>
+              <p class="error-msg" id="errSlot">Please pick a time slot.</p>
+            </fieldset>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-solid btn-full">Confirm on WhatsApp</button>
+        <p class="small" style="margin:12px 0 0 0">By continuing, WhatsApp will open with a pre-filled message to <strong>91XXXXXXXXXX</strong> (sample). We reply during clinic hours.</p>
+        <div class="form-success" id="formSuccess" role="status" tabindex="-1"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Section 10: FAQ -->
+<section class="section" id="faq" aria-labelledby="faq-heading">
+  <div class="container">
+    <div style="max-width:820px">
+      <p class="eyebrow">Good to know</p>
+      <h2 id="faq-heading">Frequently asked questions</h2>
+      <div class="faq-list reveal">
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">What happens at my first visit?<span class="sign" aria-hidden="true">+</span></button>
+          <div class="faq-a" hidden><p>A 20–30 minute conversation and examination. We note your medical history, check teeth and gums, and take an X-ray only if needed. You leave with a written plan and estimate. No treatment on day one unless you have pain and give consent.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">How long does a checkup and cleaning take?<span class="sign" aria-hidden="true">+</span></button>
+          <div class="faq-a" hidden><p>A routine checkup takes about 20 minutes. Cleaning adds 20–30 minutes depending on tartar. If gums bleed or are sensitive, we split it into two shorter visits.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Do you see children?<span class="sign" aria-hidden="true">+</span></button>
+          <div class="faq-a" hidden><p>Yes, from age 3. First visits are short — a ride in the chair, a count of teeth, and polishing if the child is comfortable. Parents stay in the room. We do not use restraint; if a child is not ready, we stop and rebook.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">What payment options do you accept?<span class="sign" aria-hidden="true">+</span></button>
+          <div class="faq-a" hidden><p>UPI, cards and cash. Consultation fee: ₹XXX (sample). Larger treatments like aligners or implants can be paid in stages — the schedule is written into your plan. GST invoice provided on request.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">What if I have severe pain or swelling?<span class="sign" aria-hidden="true">+</span></button>
+          <div class="faq-a" hidden><p>Call <a href="tel:+9198XXXXXXXX">98XXXXXXXX</a> (sample) during hours — we keep one slot daily for urgent pain. After hours, call the same number for guidance and we will advise whether to come next morning or seek urgent care. If there is facial swelling with fever or difficulty swallowing, please seek hospital care promptly.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">How often should I get a cleaning?<span class="sign" aria-hidden="true">+</span></button>
+          <div class="faq-a" hidden><p>For most adults, once every 6–12 months. If you have gum disease, smoke, or build tartar quickly, we may suggest every 3–4 months for a period. We will base it on your gums, not a fixed rule.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- Section 11: Footer -->
+<footer class="site-footer" id="contact" aria-labelledby="footer-heading">
+  <div class="container">
+    <p class="eyebrow" style="color:#8FC0BB">Contact</p>
+    <h2 id="footer-heading">Visit or call Smilevane</h2>
+    <div class="footer-grid" style="margin-top:24px">
+      <div>
+        <h3>Address</h3>
+        <p>Smilevane Dental Care<br>No. 14, Main Road, Your City,<br>Indiranagar, Bengaluru 560038<br><span class="small">(Sample address for portfolio concept)</span></p>
+        <p><a href="tel:+9198XXXXXXXX">Call: +91 98XXXXXXXX</a> (sample)<br><a href="https://wa.me/91XXXXXXXXXX?text=Hello%20Smilevane%20Dental%20Care%2C%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener">Book on WhatsApp: 91XXXXXXXXXX</a></p>
+        <p class="small">Emergency line note: For severe pain or swelling during clinic hours, call the clinic number. After hours, leave a WhatsApp message — we respond next working morning. If swelling with fever or trouble swallowing, seek hospital care without delay.</p>
+      </div>
+      <div>
+        <h3>Timings</h3>
+        <table class="timings" aria-label="Clinic timings">
+          <tbody>
+            <tr><th scope="row">Mon – Fri</th><td>10:00 – 13:30, 16:30 – 20:30</td></tr>
+            <tr><th scope="row">Saturday</th><td>10:00 – 13:30, 16:30 – 20:30</td></tr>
+            <tr><th scope="row">Sunday</th><td>Closed / by prior appointment</td></tr>
+          </tbody>
+        </table>
+        <p class="small" style="margin-top:12px">Reg. No. KSDC-XXXXX (sample)<br>Consultation fee: ₹XXX (sample)</p>
+      </div>
+      <div>
+        <h3>Map</h3>
+        <div class="map-placeholder" role="img" aria-label="Map placeholder showing clinic location on Main Road, Bengaluru">
+          <p style="margin:0"><strong style="color:#fff">Map placeholder</strong></p>
+          <p class="small" style="margin:0;color:#EAF2F0">Main Road, Indiranagar, Bengaluru<br>Near bus stop, parking in lane behind clinic (sample).</p>
+          <p style="margin:8px 0 0 0"><a href="https://www.google.com/maps/search/?api=1&query=Indiranagar+Bengaluru" target="_blank" rel="noopener">Open in Google Maps →</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">2026</span> Smilevane Dental Care (concept). All treatment advice on this page is general information, not medical advice.</span>
+      <span>Reg. No. KSDC-XXXXX (sample) · Concept design for portfolio purposes.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Extras: mobile sticky bar + desktop floating button -->
+<div class="mobile-bar" aria-label="Quick contact">
+  <a class="call" href="tel:+9198XXXXXXXX">Call Now</a>
+  <a class="wa" href="https://wa.me/91XXXXXXXXXX?text=Hello%20Smilevane%20Dental%20Care%2C%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener">Book on WhatsApp</a>
+</div>
+<a class="float-wa" href="https://wa.me/91XXXXXXXXXX?text=Hello%20Smilevane%20Dental%20Care%2C%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener" aria-label="Chat with Smilevane on WhatsApp">Chat on WhatsApp</a>
+
+<script>
+/* ========== Nav toggle ========== */
+(function(){
+  var btn = document.getElementById('menuBtn');
+  var menu = document.getElementById('mobileMenu');
+  btn.addEventListener('click', function(){
+    var open = menu.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    btn.textContent = open ? '✕' : '☰';
+  });
+  menu.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){
+      menu.classList.remove('open');
+      btn.setAttribute('aria-expanded','false');
+      btn.textContent = '☰';
+    });
+  });
+  document.getElementById('year').textContent = new Date().getFullYear();
+})();
+
+/* ========== Fade-in on scroll ========== */
+(function(){
+  var els = document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){ els.forEach(function(e){e.classList.add('visible')}); return; }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if(en.isIntersecting){ en.target.classList.add('visible'); io.unobserve(en.target); }
+    });
+  }, {threshold:0.12});
+  els.forEach(function(e){ io.observe(e); });
+})();
+
+/* ========== FAQ accordion ========== */
+document.querySelectorAll('.faq-item').forEach(function(item){
+  var btn = item.querySelector('.faq-q');
+  var panel = item.querySelector('.faq-a');
+  var sign = item.querySelector('.sign');
+  btn.addEventListener('click', function(){
+    var expanded = btn.getAttribute('aria-expanded') === 'true';
+    // close others (optional, keeps page calm)
+    document.querySelectorAll('.faq-q').forEach(function(b){
+      if(b !== btn){ b.setAttribute('aria-expanded','false'); b.querySelector('.sign').textContent='+'; b.parentElement.querySelector('.faq-a').hidden = true; }
+    });
+    btn.setAttribute('aria-expanded', String(!expanded));
+    panel.hidden = expanded;
+    sign.textContent = expanded ? '+' : '–';
+  });
+});
+
+/* ========== Booking form: validate + WhatsApp ========== */
+(function(){
+  var form = document.getElementById('bookForm');
+  var dateInput = document.getElementById('fDate');
+  // min = today (local)
+  var t = new Date(); var iso = t.getFullYear() + '-' + String(t.getMonth()+1).padStart(2,'0') + '-' + String(t.getDate()).padStart(2,'0');
+  dateInput.min = iso;
+
+  function setErr(input, errEl, bad){
+    errEl.classList.toggle('show', bad);
+    if(input) input.setAttribute('aria-invalid', bad ? 'true' : 'false');
+    return !bad;
+  }
+  document.getElementById('fPhone').addEventListener('input', function(e){
+    e.target.value = e.target.value.replace(/\D/g,'').slice(0,10);
+  });
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var name = document.getElementById('fName').value.trim();
+    var phone = document.getElementById('fPhone').value.trim();
+    var service = document.getElementById('fService').value;
+    var date = dateInput.value;
+    var slotEl = form.querySelector('input[name="slot"]:checked');
+    var slot = slotEl ? slotEl.value : '';
+
+    var ok = true;
+    ok = setErr(document.getElementById('fName'), document.getElementById('errName'), name.length < 2) && ok;
+    ok = setErr(document.getElementById('fPhone'), document.getElementById('errPhone'), !/^[6-9]\d{9}$/.test(phone)) && ok;
+    ok = setErr(document.getElementById('fService'), document.getElementById('errService'), !service) && ok;
+    var dateBad = !date || date < iso;
+    ok = setErr(dateInput, document.getElementById('errDate'), dateBad) && ok;
+    ok = setErr(null, document.getElementById('errSlot'), !slot) && ok;
+    if(!ok){
+      var first = form.querySelector('.error-msg.show');
+      if(first){ var field = first.parentElement.querySelector('input,select'); if(field) field.focus(); }
+      return;
+    }
+    var msg = 'Hello Smilevane Dental Care, I would like to book an appointment.\n'
+      + 'Name: ' + name + '\n'
+      + 'Phone: ' + phone + '\n'
+      + 'Service: ' + service + '\n'
+      + 'Preferred date: ' + date + '\n'
+      + 'Preferred slot: ' + slot;
+    var url = 'https://wa.me/91XXXXXXXXXX?text=' + encodeURIComponent(msg);
+    var box = document.getElementById('formSuccess');
+    box.innerHTML = 'Thank you, ' + name.split(' ')[0] + '. Opening WhatsApp with your booking details for <strong>' + service + ' on ' + date + ' (' + slot + ')</strong>. If it does not open, <a href="' + url + '" target="_blank" rel="noopener">tap here to send manually</a>.';
+    box.classList.add('show');
+    box.focus({preventScroll:false});
+    window.open(url, '_blank', 'noopener');
+  });
+})();
+</script>
+</body>
+</html>
